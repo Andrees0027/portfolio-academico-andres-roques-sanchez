@@ -1,4 +1,14 @@
 (() => {
+  if (window.location.protocol === 'file:') {
+    document.querySelectorAll('a[href]').forEach(link => {
+      const target = new URL(link.href);
+      if (target.protocol === 'file:' && target.pathname.endsWith('/')) {
+        target.pathname += 'index.html';
+        link.href = target.href;
+      }
+    });
+  }
+
   const menuButton = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-nav]');
   if (menuButton && nav) {
