@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>CORE · 10 prácticas web · Andrés Roques</title>
+<link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+<body>
+<div class="page-shell">
+<header class="site-header">
+<a class="brand" href="../../../index.html"><span class="brand-mark">AR</span><span class="brand-copy"><strong>Andrés Roques</strong><small>Portfolio académico</small></span></a>
+<nav class="nav"><a href="../">3º de Grado</a><a href="https://www.linkedin.com/in/andrés-roques-sánchez/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="nav-cta" href="mailto:andres.roqsan@gmail.com">Contacto</a></nav>
+</header>
+<main>
+<section class="section-wrap detail-hero">
+<div class="reveal">
+<a class="back-link" href="../../../index.html#grado3">← Volver a 3º de Grado</a>
+<p class="eyebrow">CORE · 2022–2023 · 10 prácticas</p>
+<h1>De HTTP manual a una aplicación web con usuarios, autores y roles</h1>
+<p class="detail-lead">Recorrido completo de la asignatura: peticiones HTTP, HTML/CSS, JavaScript, Node.js, ORM y una aplicación Express que evoluciona hasta incorporar persistencia, autenticación, autoría y autorización.</p>
+<div class="detail-meta"><span>10 prácticas</span><span>HTTP</span><span>Node.js</span><span>Express</span><span>Sequelize</span></div>
+<div class="detail-actions"><a class="button button-primary" href="#progresion">Ver progresión</a><a class="button button-ghost" href="#entregables">Código curado</a></div>
+</div>
+<div class="detail-art reveal"><span>CORE</span><strong>P1 → P10</strong><small>Web stack</small></div>
+</section>
+
+<div class="callout reveal">
+<strong>Auditoría final del ZIP</strong>
+<p>Se han revisado individualmente las diez prácticas. P1–P6 son hitos distintos; P7–P10 forman una evolución incremental del mismo blog. Los enunciados, autocorrectores, dependencias y material docente quedan fuera. La práctica de CV y las páginas de autor no se redistribuyen porque contienen datos personales históricos.</p>
+</div>
+
+<section class="section-wrap detail-section" id="progresion">
+<p class="eyebrow">Progresión completa</p>
+<h2>Diez entregas, una curva de aprendizaje clara.</h2>
+<div class="process-grid reveal">
+<div class="process-card"><span>01</span><h3>Calculadora HTTP</h3><p>Peticiones POST construidas manualmente, cabeceras, cuerpo <code>application/x-www-form-urlencoded</code>, respuesta JSON, error 400 y petición incompleta para provocar timeout.</p></div>
+<div class="process-card"><span>02</span><h3>CV en HTML y CSS</h3><p>Primera página estática con estructura semántica, imágenes, enlaces y estilos CSS. Se documenta como práctica, pero el código original no se publica por contener datos personales.</p></div>
+<div class="process-card"><span>03</span><h3>Calculadora JavaScript</h3><p>Interfaz HTML con DOM, eventos y operaciones unitarias/binarias para practicar variables, condicionales, bucles, arrays y funciones en cliente.</p></div>
+<div class="process-card"><span>04</span><h3>Clima con Node.js</h3><p>Módulo Node.js que lee datos meteorológicos de forma asíncrona y procesa arrays/objetos con <code>map</code>, <code>filter</code>, <code>reduce</code> y otras operaciones.</p></div>
+<div class="process-card"><span>05</span><h3>ORM con Sequelize</h3><p>Aplicación de consola sobre SQLite con modelos Doctor, Hospital y Patient, relaciones 1:N y N:M, y operaciones CRUD/consulta implementadas mediante Sequelize.</p></div>
+<div class="process-card"><span>06</span><h3>Express + MVC + EJS</h3><p>Servidor generado con Express y adaptado a una arquitectura MVC con rutas, vistas EJS, layout común y página de autor. La parte con información personal se excluye de la publicación.</p></div>
+<div class="process-card"><span>07</span><h3>Blog REST</h3><p>Conversión del servidor anterior en un blog: CRUD de posts, adjuntos, SQLite/Sequelize, migraciones, seeders, controladores y vistas específicas.</p></div>
+<div class="process-card"><span>08</span><h3>Autenticación</h3><p>Gestión CRUD de usuarios, email validado, contraseñas cifradas, login/logout y sesiones web integradas en la aplicación.</p></div>
+<div class="process-card"><span>09</span><h3>Autores</h3><p>Relación 1:N entre User y Post mediante <code>authorId</code>, asignación de autor al crear publicaciones y carga de la autoría en las vistas.</p></div>
+<div class="process-card"><span>10</span><h3>Roles y permisos</h3><p>Autorización en servidor mediante middlewares: publicar exige login, editar/borrar depende de autoría o rol admin y la gestión de usuarios queda restringida.</p></div>
+</div>
+</section>
+
+<section class="section-wrap detail-section">
+<p class="eyebrow">Resultado final</p>
+<h2>El blog acumula las prácticas 7–10.</h2>
+<div class="detail-grid reveal">
+<div class="metric-card"><strong>REST</strong><span>listado, alta, consulta, edición y borrado de posts</span></div>
+<div class="metric-card"><strong>MVC</strong><span>modelos, controladores, rutas y vistas EJS separadas</span></div>
+<div class="metric-card"><strong>ORM</strong><span>persistencia SQLite mediante Sequelize, migraciones y seeders</span></div>
+<div class="metric-card"><strong>Sesiones</strong><span>login/logout y cierre por inactividad</span></div>
+<div class="metric-card"><strong>Autoría</strong><span>relación de usuarios con publicaciones</span></div>
+<div class="metric-card"><strong>Roles</strong><span>comprobaciones de administrador, propietario y usuario autenticado</span></div>
+</div>
+</section>
+
+<section class="section-wrap detail-section">
+<p class="eyebrow">Evidencias</p>
+<h2>Hitos de la evolución.</h2>
+<div class="evidence-grid reveal">
+<figure class="evidence-card"><a href="files/core-p1-http.png" target="_blank" rel="noopener"><img src="files/core-p1-http.png" alt="Respuesta de una petición HTTP manual en la práctica 1 de CORE" loading="lazy"></a><figcaption>P1 · petición HTTP manual y respuesta de la calculadora.</figcaption></figure>
+<figure class="evidence-card"><a href="files/core-p3-calculadora.png" target="_blank" rel="noopener"><img src="files/core-p3-calculadora.png" alt="Calculadora JavaScript de la práctica 3 de CORE" loading="lazy"></a><figcaption>P3 · calculadora HTML/JavaScript.</figcaption></figure>
+<figure class="evidence-card"><a href="files/core-p4-clima-node.png" target="_blank" rel="noopener"><img src="files/core-p4-clima-node.png" alt="Salida en Node.js de la práctica de clima de CORE" loading="lazy"></a><figcaption>P4 · procesamiento de datos meteorológicos con Node.js.</figcaption></figure>
+<figure class="evidence-card"><a href="files/core-p5-orm.png" target="_blank" rel="noopener"><img src="files/core-p5-orm.png" alt="Salida de la aplicación ORM de CORE" loading="lazy"></a><figcaption>P5 · consultas y relaciones mediante Sequelize/SQLite.</figcaption></figure>
+<figure class="evidence-card"><a href="files/blog-admin.png" target="_blank" rel="noopener"><img src="files/blog-admin.png" alt="Vista de la práctica final de CORE con usuario administrador" loading="lazy"></a><figcaption>P10 · estado final con roles y acciones de administrador.</figcaption></figure>
+</div>
+</section>
+
+<section class="section-wrap detail-section">
+<p class="eyebrow">Autorización final</p>
+<h2>La política se aplica en las rutas y controladores.</h2>
+<div class="process-grid reveal">
+<div class="process-card"><span>A</span><h3>Visitante</h3><p>Puede consultar publicaciones, pero no crear ni modificar contenido.</p></div>
+<div class="process-card"><span>U</span><h3>Usuario autenticado</h3><p>Puede publicar y operar sobre los recursos que le pertenecen.</p></div>
+<div class="process-card"><span>AD</span><h3>Administrador</h3><p>Puede gestionar publicaciones y usuarios con privilegios ampliados.</p></div>
+<div class="process-card"><span>MW</span><h3>Middlewares</h3><p>Las comprobaciones de login, administrador, autor o propietario se realizan en servidor antes de ejecutar la operación.</p></div>
+</div>
+</section>
+
+<section class="section-wrap detail-section">
+<p class="eyebrow">Stack</p>
+<h2>Tecnologías practicadas</h2>
+<div class="stack-list reveal"><span>HTTP</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>EJS</span><span>REST</span><span>MVC</span><span>SQLite</span><span>Sequelize</span><span>Sessions</span></div>
+</section>
+
+<section class="section-wrap detail-section" id="entregables">
+<p class="eyebrow">Entregables seleccionados</p>
+<h2>Código curado y sin datos personales.</h2>
+<div class="download-list reveal">
+<a class="download-item" href="files/core-progresion-codigo.zip"><span><strong>CORE · progresión de prácticas</strong><small>ZIP · P1, P3–P10; P2 documentada pero no redistribuida por privacidad</small></span><b>↓</b></a>
+<a class="download-item" href="files/blog-node-express-codigo.zip"><span><strong>Blog final · P10 Roles</strong><small>ZIP · versión final saneada, sin datos personales ni dependencias</small></span><b>↓</b></a>
+</div>
+</section>
+</main>
+<footer class="site-footer section-wrap"><p>© <span data-year></span> Andrés Roques Sánchez</p><a href="../../../index.html">Portfolio principal</a></footer>
+</div>
+<script src="../../../assets/js/main.js"></script>
+</body>
+</html>

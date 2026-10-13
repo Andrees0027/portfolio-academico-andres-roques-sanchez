@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>TFM · Andrés Roques Sánchez</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../../index.html"><span class="brand-mark">AR</span><span class="brand-copy"><strong>Andrés Roques</strong><small>Portfolio académico</small></span></a>
+      <nav class="nav"><a href="../../index.html#proyectos">Proyectos</a><a href="https://www.linkedin.com/in/andrés-roques-sánchez/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="nav-cta" href="mailto:andres.roqsan@gmail.com">Contacto</a></nav>
+    </header>
+
+    <main>
+      <section class="section-wrap detail-hero">
+        <div class="reveal">
+          <a class="back-link" href="../../index.html#proyectos">← Volver al portfolio</a>
+          <p class="eyebrow">Trabajo Fin de Máster · 2026</p>
+          <h1>Diseño de modelos de optimización para la asignación de recursos y gestión de equipos en proyectos</h1>
+          <p class="detail-lead">Sistema reproducible de apoyo a la decisión que compara modelos exactos y heurísticos para asignar recursos humanos a una cartera multiproyecto e incorpora un agente LLM para interpretar los resultados.</p>
+          <div class="detail-meta"><span>UPM · ETSIT</span><span>MUIT</span><span>Calificación: 8,5</span><span>Optimización + IA</span></div>
+          <div class="detail-actions"><a class="button button-primary" href="memoria-tfm-andres-roques.pdf" target="_blank" rel="noopener">Abrir memoria PDF</a><a class="button button-ghost" href="../../index.html#estructura">Ver estructura</a></div>
+        </div>
+        <div class="detail-cover reveal"><img src="../../assets/img/tfm-cover.jpg" alt="Portada del Trabajo Fin de Máster" /></div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Resultados principales</p>
+        <h2>Comparativa sobre 1.000 escenarios.</h2>
+        <div class="detail-grid reveal">
+          <div class="metric-card"><strong>892</strong><span>escenarios con solución óptima en los modelos exactos</span></div>
+          <div class="metric-card"><strong>509</strong><span>soluciones válidas encontradas por la heurística</span></div>
+          <div class="metric-card"><strong>0,208 s</strong><span>tiempo medio de la heurística por escenario</span></div>
+          <div class="metric-card"><strong>−36,12%</strong><span>ineficiencia normalizada de competencias del multiobjetivo vs. monoobjetivo</span></div>
+          <div class="metric-card"><strong>+1,20%</strong><span>incremento medio de horas del multiobjetivo</span></div>
+          <div class="metric-card"><strong>+17,40%</strong><span>horas de la heurística frente al monoobjetivo en escenarios comunes</span></div>
+        </div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Enfoque</p>
+        <h2>Del problema empresarial a una decisión trazable.</h2>
+        <div class="process-grid reveal">
+          <div class="process-card"><span>01</span><h3>Formalización</h3><p>Modelado de disponibilidad, horas, costes, roles, competencias, límites de participación y dedicaciones previas.</p></div>
+          <div class="process-card"><span>02</span><h3>Modelos exactos</h3><p>Dos formulaciones MILP: una monoobjetivo para minimizar horas y otra multiobjetivo basada en programación por objetivos.</p></div>
+          <div class="process-card"><span>03</span><h3>Heurística multiarranque</h3><p>Construcción rápida mediante reglas de cobertura, capacidad residual y cuatro reinicios con distintos órdenes.</p></div>
+          <div class="process-card"><span>04</span><h3>Agente LLM</h3><p>Capa de interpretación de estados, métricas y riesgos sin ejecutar ni modificar los modelos matemáticos.</p></div>
+        </div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Stack</p>
+        <h2>Tecnologías empleadas</h2>
+        <div class="stack-list reveal"><span>Python 3.10</span><span>Pyomo</span><span>HiGHS</span><span>MILP</span><span>Programación por objetivos</span><span>Heurística multi-start</span><span>Microsoft Copilot Studio</span><span>LLM</span><span>CSV / JSON</span><span>VS Code</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><p>© <span data-year></span> Andrés Roques Sánchez</p><a href="../../index.html">Portfolio principal</a></footer>
+  </div>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

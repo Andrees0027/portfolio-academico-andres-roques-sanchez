@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>TFG · Andrés Roques Sánchez</title>
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="../../index.html"><span class="brand-mark">AR</span><span class="brand-copy"><strong>Andrés Roques</strong><small>Portfolio académico</small></span></a>
+      <nav class="nav"><a href="../../index.html#proyectos">Proyectos</a><a href="https://www.linkedin.com/in/andrés-roques-sánchez/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="nav-cta" href="mailto:andres.roqsan@gmail.com">Contacto</a></nav>
+    </header>
+
+    <main>
+      <section class="section-wrap detail-hero">
+        <div class="reveal">
+          <a class="back-link" href="../../index.html#proyectos">← Volver al portfolio</a>
+          <p class="eyebrow">Trabajo Fin de Grado · 2024</p>
+          <h1>Evaluación del protocolo QUIC en un balanceador de cargas para casos de estudio en 5G</h1>
+          <p class="detail-lead">Evaluación de QUIC frente a TCP en escenarios de balanceo de carga sobre redes definidas por software y plano de datos programable, utilizando P4 como tecnología habilitante.</p>
+          <div class="detail-meta"><span>UPM · ETSIT</span><span>GITST</span><span>5G</span><span>SDN · P4</span><span>QUIC vs. TCP</span></div>
+          <div class="detail-actions"><a class="button button-primary" href="memoria-tfg-andres-roques.pdf" target="_blank" rel="noopener">Abrir memoria PDF</a><a class="button button-ghost" href="../../index.html#estructura">Ver estructura</a></div>
+        </div>
+        <div class="detail-cover reveal"><img src="../../assets/img/tfg-cover.jpg" alt="Portada del Trabajo Fin de Grado" /></div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Objetivo</p>
+        <h2>Programar el plano de datos para estudiar QUIC en un entorno 5G.</h2>
+        <div class="detail-copy reveal">
+          <p>El trabajo estudia cómo integrar QUIC en un balanceador de carga y evaluar sus ventajas frente a TCP, apoyándose en la flexibilidad de las redes SDN y en el lenguaje P4 para programar el tratamiento y reenvío de paquetes.</p>
+          <p>Se construyen dos escenarios comparables: uno basado en TCP y balanceo ECMP, y otro centrado en tráfico UDP/QUIC. Ambos se despliegan en un entorno virtualizado y se validan mediante pruebas de conectividad, trazas y observación del reparto de tráfico.</p>
+        </div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Desarrollo</p>
+        <h2>Dos escenarios, una misma base programable.</h2>
+        <div class="process-grid reveal">
+          <div class="process-card"><span>01</span><h3>Entorno P4</h3><p>Máquina virtual y entorno basado en p4-utils, Mininet, bmv2 y compilador P4 para desplegar los experimentos.</p></div>
+          <div class="process-card"><span>02</span><h3>Escenario TCP</h3><p>Balanceo ECMP con cuatro caminos de igual coste y tablas de reenvío configuradas sobre switches programables.</p></div>
+          <div class="process-card"><span>03</span><h3>Escenario QUIC</h3><p>Integración de QUIC/UDP, incluyendo dependencias como picoquic y picotls, y adaptación del parser del switch.</p></div>
+          <div class="process-card"><span>04</span><h3>Validación 5G</h3><p>Comparación del comportamiento y análisis de aplicaciones potenciales en arquitecturas 5G con planos de datos programables.</p></div>
+        </div>
+      </section>
+
+      <section class="section-wrap detail-section">
+        <p class="eyebrow">Stack</p>
+        <h2>Tecnologías empleadas</h2>
+        <div class="stack-list reveal"><span>P4</span><span>SDN</span><span>Mininet</span><span>p4-utils</span><span>bmv2</span><span>QUIC</span><span>TCP / UDP</span><span>picoquic</span><span>picotls</span><span>OpenSSL</span><span>VirtualBox</span><span>Ubuntu</span><span>5G</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><p>© <span data-year></span> Andrés Roques Sánchez</p><a href="../../index.html">Portfolio principal</a></footer>
+  </div>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

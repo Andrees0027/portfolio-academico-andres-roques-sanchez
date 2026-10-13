@@ -1,0 +1,13 @@
+INSE — Selección anonimizada de cálculos propios (2023–2024)
+
+Trabajo 1: Centro de transformación
+- Clasificación de acometida, alimentación y emplazamiento.
+- Identificación funcional de celdas de línea, protección y transformación.
+- Revisión de transformador y cuadro de baja tensión.
+
+Trabajo 2: Previsión de carga de un edificio residencial
+- Ascensores, grupo de presión, bombas, alumbrado y servicios comunes.
+- Locales/oficinas, garaje, vivienda e infraestructura de recarga VE.
+- Aplicación de coeficientes de cálculo y simultaneidad.
+
+El portfolio no publica las fotografías ni la documentación original por estar referidas a una instalación residencial real. Se conserva únicamente este resumen técnico anonimizado.
